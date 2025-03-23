@@ -1,47 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizza</title>
+  <title>Receta de Pizza</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
+  <style>
+    body {
+      background-color: #ffe5e5;
+    }
+    .navbar {
+      background-color: #e97979 !important;
+    }
+    .recipe-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-print {
+      background-color: #e97979;
+      color: white;
+      border: none;
+    }
+    .btn-print:hover {
+      background-color: #d66767;
+    }
+    footer {
+      background-color: #e97979;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-<body style="background-color: #ecb2b2;">
-  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e97979;">
-      <div class="container-fluid">
-        <img src="LOGOBETA.webp" alt="" width="80px">
-        <a class="navbar-brand" href="#">Recetario</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Creación de recetas</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Otras opciones
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">Acuerdos y reglas dentro de la aplicación</a></li>
-                <li><a class="dropdown-item" href="#">Opciones y configuraciones</a></li>
-                <li><a class="dropdown-item" href="../condiciones.html">Terminos y Condiciones</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search"  aria-label="">
-            <button class="btn btn-outline-dark" type="submit" style="background-color: #e48c8c;">Búsqueda</button>
-          </form>
+<body>
+  <body style="background-color: #ecb2b2;">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e97979;">
+        <div class="container-fluid">
+          <img src="LOGOBETA.webp" alt="" width="80px">
+          <a class="navbar-brand" href="#">Recetario</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Creación de recetas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Otras opciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Acuerdos y reglas dentro de la aplicación</a></li>
+                  <li><a class="dropdown-item" href="#">Opciones y configuraciones</a></li>
+                  <li><a class="dropdown-item" href="../condiciones.html">Terminos y Condiciones</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search"  aria-label="">
+              <button class="btn btn-outline-dark" type="submit" style="background-color: #e48c8c;">Búsqueda</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     <div class="container mt-4">
+      <div class="row justify-content-center">
+       <div class="col-md-8 recipe-container">
+        <h2 class="text-center">🍕 Receta para hacer una Pizza Casera</h2>
+        <hr>
+        
+        <div class="text-center">
+          <img src="../imagenes/pizza.jpg" alt="Pizza Casera" class="img-fluid rounded" style="max-width: 100%;">
+        </div>
+        <br>
+
+        <h4>Ingredientes:</h4>
+        <ul>
+          <li>500g de harina</li>
+          <li>300ml de agua</li>
+          <li>10g de sal</li>
+          <li>10g de levadura</li>
+          <li>30ml de aceite de oliva</li>
+          <li>200g de salsa de tomate</li>
+          <li>250g de queso mozzarella</li>
+          <li>Ingredientes opcionales: pepperoni, champiñones, jamón, aceitunas, etc.</li>
+        </ul>
+
+        <!-- Pasos -->
+        <h4>Preparación:</h4>
+        <ol>
+          <li>Mezcla la harina, sal y levadura en un tazón grande.</li>
+          <li>Añade el agua y el aceite de oliva, y amasa hasta obtener una masa homogénea.</li>
+          <li>Deja reposar la masa en un lugar cálido durante 1 hora.</li>
+          <li>Extiende la masa en una bandeja para hornear.</li>
+          <li>Unta la salsa de tomate sobre la masa y esparce el queso mozzarella.</li>
+          <li>Agrega los ingredientes adicionales de tu elección.</li>
+          <li>Hornea a 220°C durante 15-20 minutos o hasta que la pizza esté dorada.</li>
+          <li>¡Saca la pizza del horno, deja enfriar un poco y disfruta! 🍕</li>
+        </ol>
+
+        
+        <div class="text-center">
+          <button class="btn btn-print" onclick="window.print()">🖨️ Imprimir Receta</button>
         </div>
       </div>
-    </nav>
+    </div>
+  </div>
+  <footer>
+    <p>Recetario &copy; 2025 - Pagina hecha por Elenes Lafuente Santiago<br>Alumno del <a href="https://cetis107.edu.mx/portal/">CETIs N°107</a></p>
+  </footer>
+
+
   <script src="../js/bootstrap.js"></script>
 </body>
 </html>
