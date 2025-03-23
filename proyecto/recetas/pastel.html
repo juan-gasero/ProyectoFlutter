@@ -6,6 +6,29 @@
   <title>Pastel</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
+<style>
+  .recipe-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-print {
+      background-color: #e97979;
+      color: white;
+      border: none;
+    }
+    .btn-print:hover {
+      background-color: #d66767;
+    }
+    footer {
+      background-color: #e97979;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+</style>
 <body style="background-color: #ecb2b2;">
   <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e97979;">
       <div class="container-fluid">
@@ -42,6 +65,56 @@
         </div>
       </div>
     </nav>
+
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8 recipe-container">
+          <h2 class="text-center">🎂 Receta para hacer un Pastel Casero</h2>
+          <hr>
+          
+         
+          <div class="text-center">
+            <img src="../imagenes/pastel.jpg" alt="Pastel Casero" class="img-fluid rounded" style="max-width: 100%;">
+          </div>
+          <br>
+  
+          <h4>Ingredientes:</h4>
+          <ul>
+            <li>3 tazas de harina</li>
+            <li>2 tazas de azúcar</li>
+            <li>1 taza de leche</li>
+            <li>4 huevos</li>
+            <li>1 taza de mantequilla derretida</li>
+            <li>2 cucharaditas de polvo de hornear</li>
+            <li>1 cucharadita de esencia de vainilla</li>
+            <li>1 pizca de sal</li>
+            <li>Opcional: cobertura de chocolate, fresas, crema batida.</li>
+          </ul>
+  
+          <!-- Pasos -->
+          <h4>Preparación:</h4>
+          <ol>
+            <li>Precalienta el horno a 180°C.</li>
+            <li>En un tazón grande, mezcla la harina, azúcar, polvo de hornear y sal.</li>
+            <li>En otro recipiente, bate los huevos con la leche, la mantequilla derretida y la esencia de vainilla.</li>
+            <li>Incorpora los ingredientes líquidos en los secos y mezcla hasta obtener una masa homogénea.</li>
+            <li>Vierte la mezcla en un molde engrasado y hornea por 35-40 minutos.</li>
+            <li>Deja enfriar antes de desmoldar y decorar con tu cobertura favorita.</li>
+            <li>¡Disfruta de tu delicioso pastel casero! 🎂</li>
+          </ol>
+  
+          <!-- Botón de imprimir receta -->
+          <div class="text-center">
+            <button class="btn btn-print" onclick="window.print()">🖨️ Imprimir Receta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Recetario &copy; 2025 - Pagina hecha por Elenes Lafuente Santiago<br>Alumno del <a href="https://cetis107.edu.mx/portal/">CETIs N°107</a></p>
+    </footer>
+
   <script src="../js/bootstrap.js"></script>
 </body>
 </html>
