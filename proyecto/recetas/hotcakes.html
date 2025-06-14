@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receta de Hotcakes</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<style>
+  .recipe-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-print {
+      background-color: #e97979;
+      color: white;
+      border: none;
+    }
+    .btn-print:hover {
+      background-color: #d66767;
+    }
+    footer {
+      background-color: #e97979;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+</style>
+<body style="background-color: #ecb2b2;">
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e97979;">
+      <div class="container-fluid">
+        <img src="LOGOBETA.webp" alt="" width="80px">
+        <a class="navbar-brand" href="#">Recetario</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Creación de recetas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Otras opciones
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">Acuerdos y reglas dentro de la aplicación</a></li>
+                <li><a class="dropdown-item" href="#">Opciones y configuraciones</a></li>
+                <li><a class="dropdown-item" href="../condiciones.html">Terminos y Condiciones</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search"  aria-label="">
+            <button class="btn btn-outline-dark" type="submit" style="background-color: #e48c8c;">Búsqueda</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8 recipe-container">
+          <h2 class="text-center">🥞 Hotcakes</h2>
+          <hr>
+          
+         
+          <div class="text-center">
+            <img src="../imagenes/hotcakes.jpeg" alt="HotCakes" class="img-fluid rounded" style="max-width: 100%;">
+          </div>
+          <br>
+  
+          <h4> Ingredientes (para 6–8 hotcakes):</h4>
+          <ul>
+            <li>1 taza de harina de trigo</li>
+            <li>2 cucharadas de azúcar</li>
+            <li>1 cucharada de polvo para hornear</li>
+            <li>1/4 cucharadita de sal</li>
+            <li>1 huevo</li>
+            <li>3/4 taza de leche</li>
+            <li>2 cucharadas de mantequilla derretida</li>
+            <li>1 cucharadita de extracto de vainilla (opcional)</li>
+            <li>Mantequilla o aceite para el sartén</li>
+          </ul>
+  
+          <h4>Preparación:</h4>
+          <ol>
+            <p>Para preparar hotcakes esponjosos, en un tazón mezcla los ingredientes secos: la harina, el azúcar, el polvo para hornear y la sal. En otro recipiente, bate el huevo con la leche, la mantequilla derretida y la vainilla. Incorpora los ingredientes líquidos a los secos y mezcla solo hasta que todo se integre (no sobrebatas, puede quedar con algunos grumos). Calienta una sartén o comal ligeramente engrasado a fuego medio. Vierte porciones de la mezcla con un cucharón y cocina hasta que veas burbujas en la superficie; voltea y cocina por el otro lado hasta que estén dorados. Sirve calientes con mantequilla, miel de maple, frutas o lo que más te guste.</p>
+          </ol>
+  
+          <div class="text-center">
+            <button class="btn btn-print" onclick="window.print()">🖨️ Imprimir Receta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Recetario &copy; 2025 - Pagina hecha por Elenes Lafuente Santiago<br>Alumno del <a href="https://cetis107.edu.mx/portal/">CETIs N°107</a></p>
+    </footer>
+
+  <script src="../js/bootstrap.js"></script>
+</body>
+</html>
