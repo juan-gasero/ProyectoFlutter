@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receta Enchiladas Verdes</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <style>
+    .recipe-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-print {
+      background-color: #e97979;
+      color: white;
+      border: none;
+    }
+    .btn-print:hover {
+      background-color: #d66767;
+    }
+    footer {
+      background-color: #e97979;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <body style="background-color: #ecb2b2;">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e97979;">
+        <div class="container-fluid">
+          <img src="LOGOBETA.webp" alt="" width="80px">
+          <a class="navbar-brand" href="#">Recetario</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Creación de recetas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Otras opciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Acuerdos y reglas dentro de la aplicación</a></li>
+                  <li><a class="dropdown-item" href="#">Opciones y configuraciones</a></li>
+                  <li><a class="dropdown-item" href="../condiciones.html">Terminos y Condiciones</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search"  aria-label="">
+              <button class="btn btn-outline-dark" type="submit" style="background-color: #e48c8c;">Búsqueda</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
+
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8 recipe-container">
+        <h2 class="text-center">🥡 Receta de Enchiladas Verdes</h2>
+        <hr>
+        
+        <div class="text-center">
+          <img src="../imagenes/enchiladas-verdes.jpg" alt="Arroz Chino" class="img-fluid rounded" style="max-width: 100%;">
+        </div>
+        <br>
+
+        <h4>Ingredientes:</h4>
+        <ul>
+          <li>2 pechugas de pollo cocidas y desmenuzadas</li>
+          <li>10–12 tortillas de maíz</li>
+          <li>4 tomates verdes (tomatillos)</li>
+          <li>2 chiles serranos (ajusta al gusto)</li>
+          <li>1/4 de cebolla</li>
+          <li>1 diente de ajo</li>
+          <li>1/2 taza de crema ácida</li>
+          <li>100 g de queso fresco rallado</li>
+          <li>Aceite vegetal</li>
+          <li>Sal al gusto</li>
+          <li>Cilantro (opcional, para decorar)</li>
+        </ul>
+
+        <h4>Preparación:</h4>
+        <ol>
+          <p>Para preparar enchiladas verdes de pollo, primero hierve los tomates verdes junto con los chiles serranos hasta que estén suaves. Luego, licúalos con cebolla, ajo, sal al gusto y un poco de agua hasta obtener una salsa homogénea. Aparte, en una sartén con un poco de aceite, vierte la salsa y cocínala por unos minutos para que espese ligeramente. Calienta las tortillas pasándolas por aceite caliente solo unos segundos para que se ablanden. Después, rellena cada tortilla con pollo desmenuzado, enróllalas y colócalas en un plato. Baña las enchiladas con la salsa verde caliente, y al final agrégales crema, queso fresco rallado y, si deseas, un poco de cilantro picado. Puedes acompañarlas con arroz y frijoles para un platillo completo.</p>
+        </ol>
+
+        <div class="text-center">
+          <button class="btn btn-print" onclick="window.print()">🖨️ Imprimir Receta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Recetario &copy; 2025 - Pagina hecha por Elenes Lafuente Santiago<br>Alumno del <a href="https://cetis107.edu.mx/portal/">CETIs N°107</a></p>
+  </footer>
+
+  <script src="../js/bootstrap.js"></script>
+</body>
+</html>
